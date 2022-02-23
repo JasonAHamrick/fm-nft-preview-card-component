@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: outfit, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    background-color: hsl(217, 54%, 11%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+span {
+    color: hsl(215, 51%, 70%);
+    padding-left: .4rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.card {
+    min-width: 20.4375rem;
+    max-width: 21.875rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 30px 20px 20px hsl(0, 0%, 0%, .15);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 0.5rem;
+    transition: 150ms;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.image-container:hover .overlay {
+    height: 100%;
+}
+
+.eyeball {
+    opacity: 0;
+    transition: 75ms;
+}
+
+.image-container:hover .eyeball {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 1.3125rem;
+    font-weight: 600;
+    padding-top: 1.875rem;
+    padding-bottom: 1.3125rem;   
+}
+
+#description {
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+}
+
+.auction {
+    display: flex;
+    justify-content: center;
+    max-height: 1.125rem;
+    margin-block: 1.1875rem;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.time {
+    margin-left: 7.2rem;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+    border: 0, 0, 1, 0;
+}
+
+#avatar {
+    width: 2.0625rem;
+    outline: 0.0625rem solid white;
+    border-radius: 100vw;
+    display: inline-block;
+    margin-top: 1.1875rem;
+    margin-right: 1.1875rem;
+    margin-bottom: 1.1875rem;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+
+.attribution {
+    padding: 5px;
+    font-size: 0.75rem;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+}
