@@ -109,6 +109,10 @@ h1 {
   display: inline;
 }
 
+h2 {
+  display: none;
+}
+
 #description {
     line-height: 1.625rem;
     font-size: 1.125rem;
